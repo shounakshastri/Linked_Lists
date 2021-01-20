@@ -57,7 +57,7 @@ class LinkedList:
         if not self.head:
             raise Exception("List is empty!")
         
-        # if the target_data is the foirst element in the list, then we can reuse our previous function
+        # if the target_data is the first element in the list, then we can reuse our previous function
         if self.head.data == target_node_data:
             return self.add_at_beginning(new_node)
         
