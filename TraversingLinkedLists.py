@@ -12,6 +12,7 @@ class LinkedList:
             for ii in nodes:
                 node.next = Node(data = ii)
                 node = node.next
+                
     def __repr__(self): # Optional
         node = self.head
         nodes = []
@@ -22,7 +23,7 @@ class LinkedList:
         return " -> ".join(nodes) # This will display the linkedlist as a -> b -> None
 
     # Here we will add an iterable method which will help us define linkedlists like normal lists.
-    # Check this li nke for the explanation of "yield" -> https://stackoverflow.com/questions/231767/what-does-the-yield-keyword-do
+    # Check this link for the explanation of "yield" -> https://stackoverflow.com/questions/231767/what-does-the-yield-keyword-do
     def __iter__(self):
         node = self.head
         while node is not None:
